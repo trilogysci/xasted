@@ -1,0 +1,120 @@
+{
+    "components": [
+        "xasted"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "domains": {
+        "IntelSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Synchronous",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "files": [
+        {
+            "name": "xasted_shim.cpp",
+            "sha256": "c236e0158bd13086c1177953216655055f44401d3ba20985f8e67679be683d33"
+        },
+        {
+            "name": "xasted.sdc",
+            "sha256": "bf4a88fe33640142bcf0b48532b64331854b5f1310f6cd3d95bbccf5a7a916cc"
+        },
+        {
+            "name": "xasted.v",
+            "sha256": "f0f61b0199472217a51b4e8ec8f125600b70173c535f422c9935cb5fea8d580d"
+        }
+    ],
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "8535131a65378fb0322f084697b10cc01eadcd2acbf9a9a828dc9aae411ff8e9",
+    "top_component": {
+        "name": "xasted",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "System",
+                "is_clock": true,
+                "name": "MAX10_CLK1_50",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "in",
+                "is_clock": false,
+                "name": "KEY",
+                "type_name": "[1:0]",
+                "width": 2
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "HEX0",
+                "type_name": "[7:0]",
+                "width": 8
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "HEX1",
+                "type_name": "[7:0]",
+                "width": 8
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "HEX2",
+                "type_name": "[7:0]",
+                "width": 8
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "HEX3",
+                "type_name": "[7:0]",
+                "width": 8
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "HEX4",
+                "type_name": "[7:0]",
+                "width": 8
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "HEX5",
+                "type_name": "[7:0]",
+                "width": 8
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "LEDR",
+                "type_name": "[9:0]",
+                "width": 10
+            }
+        ]
+    },
+    "version": "unstable"
+}
